@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,6 +27,109 @@
         android:textStyle="bold"
         />
 
+    <EditText
+        android:id="@+id/edtTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        />
 
+    <CheckBox
+        android:id="@+id/Fever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fever"
+        android:textColor="#ff66ff"
+        android:layout_marginTop="200dp"
+        android:layout_alignStart="@+id/edtTextName"
+        />
+    <CheckBox
+        android:id="@+id/cough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cough"
+        android:textColor="#ff66ff"
+        android:layout_marginTop="200dp"
+        android:layout_alignStart="@+id/Fever"
+        android:layout_marginStart="130dp"/>
+
+    <CheckBox
+        android:id="@+id/Breathlessness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Fever"
+        android:layout_marginTop="230dp"
+        android:text="Breathlessness"
+        android:textColor="#ff66ff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the Symptoms:"
+        android:layout_marginTop="185dp"
+        android:layout_alignStart="@+id/edtTextName"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="number"
+        android:layout_marginTop="280dp"
+        android:layout_alignStart="@+id/edtTextName"
+        android:hint="oxygen level"
+        android:contentDescription="Enter the oxygen saturation level"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/vaccinated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccinated"
+            android:textColor="#ff66ff"/>
+
+        <RadioButton
+            android:id="@+id/notvaccinated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Vaccinated"
+            android:textColor="#ff66ff"/>
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="number"
+        android:layout_marginTop="380dp"
+        android:hint="temp in Farh"
+        android:layout_alignStart="@id/editTextNumber"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:backgroundTint="#ff66ff"
+        android:layout_marginTop="550dp"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>
